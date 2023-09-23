@@ -3505,7 +3505,7 @@ function Library:CreateWindow(...)
     });
 
     local TransparencyCache = {};
-    local Toggled = true;
+    local Toggled = false;
     local Fading = false;
 
     function Library:Toggle()
@@ -3560,7 +3560,7 @@ function Library:CreateWindow(...)
 
         Outer.Visible = Toggled;
 
-        Fading = false;
+        Fading = true;
     end
 
     Library:GiveSignal(InputService.InputBegan:Connect(function(Input, Processed)
