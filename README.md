@@ -370,9 +370,9 @@ function Library.xova()
 				TweenService:Create(
 					Main,
 					TweenInfo.new(.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out),
-					{Size = UDim2.new(0, 360, 0, 655)}
+					{Size = UDim2.new(0, 544, 0, 600)}
 				):Play()
-				repeat wait() until Main.Size == UDim2.new(0, 360, 0, 655)
+				repeat wait() until Main.Size == UDim2.new(0, 600, 0, 600)
 				uitoggled = false
 			end
 		end
@@ -383,7 +383,7 @@ function Library.xova()
 	Topbar.Active = true
 	Topbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Topbar.BackgroundTransparency = 1.000
-	Topbar.Size = UDim2.new(0, 360, 0, 48)
+	Topbar.Size = UDim2.new(0, 600, 0, 48)
 
 	Logo.Name = "Logo"
 	Logo.Parent = Topbar
@@ -451,7 +451,7 @@ function Library.xova()
 		Notification.Position = UDim2.new(0.5,0,0.5,0)
 		Notification.Size = UDim2.new(0, 0, 0, 0)
 
-		Notification:TweenSizeAndPosition(UDim2.new(0, 360, 0, 655),  UDim2.new(0.5, 0, 0.5,0), "Out", "Quart", 0.2, true)
+		Notification:TweenSizeAndPosition(UDim2.new(0, 600, 0, 600),  UDim2.new(0.5, 0, 0.5,0), "Out", "Quart", 0.2, true)
 
 		NotificationUIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(15, 15, 15))}
 		NotificationUIGradient.Rotation = 90
@@ -533,14 +533,14 @@ function Library.xova()
 		Line.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 		Line.BorderSizePixel = 0
 		Line.Position = UDim2.new(0.00552486209, 0, 5.1500001, 0)
-		Line.Size = UDim2.new(0, 360, 0, 5)
+		Line.Size = UDim2.new(0, 600, 0, 5)
 
 		LineMain.Name = "LineMain"
 		LineMain.Parent = Line
 		LineMain.Active = true
 		LineMain.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
 		LineMain.BorderSizePixel = 0
-		LineMain.Size = UDim2.new(0, 360, 0, 5)
+		LineMain.Size = UDim2.new(0, 600, 0, 5)
 
 		ButtonBar.MouseEnter:Connect(function()
 			TweenService:Create(
