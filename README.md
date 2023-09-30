@@ -383,7 +383,7 @@ function Library.xova()
 	Topbar.Active = true
 	Topbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Topbar.BackgroundTransparency = 1.000
-	Topbar.Size = UDim2.new(0, 544, 0, 48)
+	Topbar.Size = UDim2.new(0, 360, 0, 48)
 
 	Logo.Name = "Logo"
 	Logo.Parent = Topbar
@@ -451,7 +451,7 @@ function Library.xova()
 		Notification.Position = UDim2.new(0.5,0,0.5,0)
 		Notification.Size = UDim2.new(0, 0, 0, 0)
 
-		Notification:TweenSizeAndPosition(UDim2.new(0, 544, 0, 655),  UDim2.new(0.5, 0, 0.5,0), "Out", "Quart", 0.2, true)
+		Notification:TweenSizeAndPosition(UDim2.new(0, 360, 0, 655),  UDim2.new(0.5, 0, 0.5,0), "Out", "Quart", 0.2, true)
 
 		NotificationUIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(15, 15, 15))}
 		NotificationUIGradient.Rotation = 90
