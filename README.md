@@ -340,7 +340,7 @@ function Library.xova()
 	Main.Size = UDim2.new(0, 0, 0, 0)
 	Main.ClipsDescendants = true
 
-	TweenService:Create(Main,TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{Size = UDim2.new(0, 360, 0, 655)}):Play()
+	TweenService:Create(Main,TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{Size = UDim2.new(0, 544, 0, 600)}):Play()
 
 	MainUICorner.CornerRadius = UDim.new(0, 9)
 	MainUICorner.Name = "MainUICorner"
