@@ -2521,13 +2521,13 @@ function Library.xova()
 		TweenService:Create(
 			LeftScrollbar,
 			TweenInfo.new(0.1, Enum.EasingStyle.Bounce, Enum.EasingDirection.Out),
-			{Size = UDim2.new(0, 20, 0, 20)}
+			{Size = UDim2.new(0, 70, 0, 20)}
 		):Play()
 		repeat wait() until LeftScrollbar.Size == UDim2.new(0, 20, 0, 20)
 		TweenService:Create(
 			LeftScrollbar,
 			TweenInfo.new(0.1, Enum.EasingStyle.Bounce, Enum.EasingDirection.Out),
-			{Size = UDim2.new(0, 40, 0, 40)}
+			{Size = UDim2.new(0, 70, 0, 40)}
 		):Play()
 		for i ,v in next , Scrollingbar:GetChildren() do
 			if v:IsA("TextButton") and v.Name == tostring(FolderUIPageLayout.CurrentPage):gsub("%MainPage", "ButtonBar") then
