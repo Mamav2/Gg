@@ -135,7 +135,7 @@ local Properties = {
 		Image = "http://www.roblox.com/asset/?id=5554236805",
 		ScaleType = Enum.ScaleType.Slice,
 		SliceCenter = Rect.new(23,23,277,277),
-		Size = UDim2.fromScale(1,1) + UDim2.fromOffset(30,30),
+		Size = UDim2.fromScale(1,1) + UDim2.fromOffset(50,50),
 		Position = UDim2.fromOffset(-15,-15)
 	},
 	Circle = {
@@ -370,9 +370,9 @@ function Library.xova()
 				TweenService:Create(
 					Main,
 					TweenInfo.new(.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out),
-					{Size = UDim2.new(0, 544, 0, 600)}
+					{Size = UDim2.new(0, 544, 0, 655)}
 				):Play()
-				repeat wait() until Main.Size == UDim2.new(0, 600, 0, 600)
+				repeat wait() until Main.Size == UDim2.new(0, 600, 0, 655)
 				uitoggled = false
 			end
 		end
@@ -451,7 +451,7 @@ function Library.xova()
 		Notification.Position = UDim2.new(0.5,0,0.5,0)
 		Notification.Size = UDim2.new(0, 0, 0, 0)
 
-		Notification:TweenSizeAndPosition(UDim2.new(0, 600, 0, 600),  UDim2.new(0.5, 0, 0.5,0), "Out", "Quart", 0.2, true)
+		Notification:TweenSizeAndPosition(UDim2.new(0, 600, 0, 655),  UDim2.new(0.5, 0, 0.5,0), "Out", "Quart", 0.2, true)
 
 		NotificationUIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(15, 15, 15))}
 		NotificationUIGradient.Rotation = 90
@@ -2521,13 +2521,13 @@ function Library.xova()
 		TweenService:Create(
 			LeftScrollbar,
 			TweenInfo.new(0.1, Enum.EasingStyle.Bounce, Enum.EasingDirection.Out),
-			{Size = UDim2.new(0, 70, 0, 20)}
+			{Size = UDim2.new(0, 20, 0, 20)}
 		):Play()
 		repeat wait() until LeftScrollbar.Size == UDim2.new(0, 20, 0, 20)
 		TweenService:Create(
 			LeftScrollbar,
 			TweenInfo.new(0.1, Enum.EasingStyle.Bounce, Enum.EasingDirection.Out),
-			{Size = UDim2.new(0, 70, 0, 40)}
+			{Size = UDim2.new(0, 40, 0, 40)}
 		):Play()
 		for i ,v in next , Scrollingbar:GetChildren() do
 			if v:IsA("TextButton") and v.Name == tostring(FolderUIPageLayout.CurrentPage):gsub("%MainPage", "ButtonBar") then
