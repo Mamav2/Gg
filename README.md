@@ -1,5 +1,4 @@
-
-_G.Key = " "
+_G.Key = ""
 
 local keychecked = false
 local hwid = nill
@@ -19,6 +18,3 @@ if hwidplr == hwid then
  else
        game.Players.LocalPlayer:Kick("incorrect key")
  end
-
-
-setclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
